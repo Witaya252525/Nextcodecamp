@@ -23,6 +23,7 @@ urlpatterns = [
     path('hello/' ,views.hello_django  , name = 'home'),
     path('videolist/' ,views.show_video  , name = 'show'),
     path('videoclass/' ,views.show_video_class.as_view()  , name = 'show1'),
+    path('videoform/' ,views.video_form.as_view()  , name = 'show2'),
 ]
 
 

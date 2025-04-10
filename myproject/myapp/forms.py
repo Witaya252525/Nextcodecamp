@@ -1,7 +1,7 @@
 
 
 
-from  django.forms import ModelForm ,TextInput ,DateInput, Textarea
+from  django.forms import ModelForm ,TextInput ,DateInput
 from  myapp.models import Video
 import datetime
 
@@ -15,3 +15,6 @@ class VideoForm(ModelForm):
             'published_date': DateInput(attrs={"format": "%Y-%m-%d", 'class': 'form-control' ,'value':today }),
             'short_details': TextInput(attrs={'class': 'form-control'}),
         }
+
+
+        

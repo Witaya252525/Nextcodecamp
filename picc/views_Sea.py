@@ -35,6 +35,7 @@ class show_form(View):
                        description = form.cleaned_data['description'],
                        short_details = form.cleaned_data['short_details'])
             v.save()
+            context = {'id': v.id, 'title': v.title, 'description': v.description, 'short_details': v.short_details}
             return HttpResponse("Video saved successfully!")
         else:
-            return render(request, "thank.html")
+            return render(request, "thank.html" , context)
