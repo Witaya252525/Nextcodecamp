@@ -38,3 +38,14 @@ class Video ( models.Model):
     def __str__(self):
         return self.title
     
+
+
+class Course(models.Model):
+    title = models.CharField(max_length= 255)   
+    video = models.ManyToManyField(Video ,default="")
+   
+    def __str__(self):
+        return self.title
+    
+
+    

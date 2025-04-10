@@ -11,6 +11,9 @@ class Videoadmin(admin.ModelAdmin):
 admin.site.register(Video ,Videoadmin)
 admin.site.register(Author)
 admin.site.register(BussinessContact)
+admin.site.register(Course)
+
+
 
 
 
