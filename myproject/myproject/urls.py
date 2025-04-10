@@ -22,5 +22,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('hello/' ,views.hello_django  , name = 'home'),
     path('videolist/' ,views.show_video  , name = 'show'),
-    path('videoclass/' ,views.show_video_class.as_view()  , name = 'show'),
+    path('videoclass/' ,views.show_video_class.as_view()  , name = 'show1'),
 ]
+
+
+
