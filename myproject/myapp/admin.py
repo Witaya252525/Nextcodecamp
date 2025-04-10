@@ -9,3 +9,8 @@ class Videoadmin(admin.ModelAdmin):
 
     list_display = ("id" ,"title" , show_title  ,"published_date" , "short_details")
 admin.site.register(Video ,Videoadmin)
+admin.site.register(Author)
+admin.site.register(BussinessContact)
+
+
+
