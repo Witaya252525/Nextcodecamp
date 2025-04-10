@@ -42,7 +42,7 @@ class Video ( models.Model):
 
 class Course(models.Model):
     title = models.CharField(max_length= 255)   
-    video = models.ManyToManyField(Video ,default="")
+    video = models.ManyToManyField(Video ,default="" ,related_name='videos' ,related_query_name='q_video')
    
     def __str__(self):
         return self.title
